@@ -1,17 +1,138 @@
-/* Error: Can't find stylesheet to import.
- *   ,
- * 1 | @import "../style/reset"; 
- *   |         ^^^^^^^^^^^^^^^^
- *   '
- *   style\main.scss 1:9  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Can't find stylesheet to import.\a   \2577 \a 1 \2502  @import \"../style/reset\"; \a   \2502          ^^^^^^^^^^^^^^^^\a   \2575 \a   style\\main.scss 1:9  root stylesheet";
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 18px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  vertical-align: baseline;
 }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+#cat-section #cat-container {
+  width: 70vw;
+  min-width: 390px;
+  margin: 0 auto;
+}
+#cat-section #cat-container h2 {
+  font-size: 2rem;
+  font-weight: 400;
+  color: #EA5455;
+  margin: 20px 0;
+}
+#cat-section #cat-container a {
+  font-size: 0.9rem;
+  text-decoration: none;
+  color: #000000;
+}
+#cat-section #cat-container #cat-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 150px);
+  grid-template-rows: repeat(2, 160px);
+  gap: 10px;
+  align-items: center;
+  align-content: center;
+  justify-items: center;
+  max-width: 980px;
+  margin: 40px 0;
+}
+#cat-section #cat-container #cat-grid .cat-cell {
+  background-color: #2D4059;
+  border-radius: 25px;
+  height: 140px;
+  width: 140px;
+  color: #E5E5E5;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  transition: all 0.2s;
+}
+#cat-section #cat-container #cat-grid .cat-cell:hover {
+  transform: scale(105%);
+  cursor: pointer;
+}
+#cat-section #cat-container #cat-grid .cat-cell i {
+  font-size: 3.4rem;
+}
+#cat-section #cat-container #cat-grid .cat-cell p {
+  font-size: 1.4rem;
+}
+@media screen and (max-width: 700px) {
+  #cat-section #cat-container {
+    margin: 0 auto;
+  }
+  #cat-section #cat-container #cat-grid {
+    justify-content: center;
+    grid-template-columns: repeat(auto-fill, 140px);
+  }
+  #cat-section #cat-container #cat-grid .cat-cell {
+    width: 130px;
+    height: 130px;
+  }
+  #cat-section #cat-container #cat-grid .cat-cell i {
+    font-size: 3rem;
+  }
+  #cat-section #cat-container #cat-grid .cat-cell p {
+    font-size: 1.2rem;
+  }
+  #cat-section #cat-container #cat-grid #cat-cell1 {
+    display: none;
+  }
+  #cat-section #cat-container #cat-grid #cat-cell3 {
+    display: none;
+  }
+  #cat-section #cat-container #cat-grid #cat-cell6 {
+    display: none;
+  }
+  #cat-section #cat-container #cat-grid #cat-cell7 {
+    display: none;
+  }
+  #cat-section #cat-container #cat-grid #cat-cell5 {
+    display: none;
+  }
+  #cat-section #cat-container #cat-grid #cat-cell4 {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
