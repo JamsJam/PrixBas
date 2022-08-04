@@ -1,17 +1,39 @@
-/* Error: Can't find stylesheet to import.
- *   ,
- * 1 | @import "../style/reset"; 
- *   |         ^^^^^^^^^^^^^^^^
- *   '
- *   style\main.scss 1:9  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Can't find stylesheet to import.\a   \2577 \a 1 \2502  @import \"../style/reset\"; \a   \2502          ^^^^^^^^^^^^^^^^\a   \2575 \a   style\\main.scss 1:9  root stylesheet";
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  background: #FCFCFC;
+  width: 270px;
+  height: 200px;
+  margin: 10px;
+}
+
+.card-image {
+  background-color: aqua;
+  height: 150px;
+  margin: 10px;
+  background-size: cover;
+}
+
+.card-1 {
+  background-image: url("./images/product/bricolage_marteau.png");
+}
+
+.infos {
+  display: flex;
+  justify-content: space-between;
+}
+
+p {
+  color: green;
+}
+
+/*# sourceMappingURL=style.css.map */
