@@ -1,0 +1,88 @@
+#choix-section
+{
+
+    #choix-container
+    {
+        width: 70vw ;
+        min-width: 390px;
+        margin: 0 auto;
+
+        h2
+        {
+            font-size: 2rem;
+            font-weight: 700;
+            color:#EA5455  ;
+            margin: 20px 0
+        }
+
+
+        #choix-flex-container
+        {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-around;
+
+
+            .choix-flex-content
+            {
+                height: 250px;
+                margin : 20px 0;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                
+
+                .choix-img{
+                    height: 200px;
+                    width: 300px;
+                    background: {
+                        
+                    }
+                }
+                
+                #choix-content1
+                {
+                    
+                    background: {
+                        image: url(../images/img/christin-hume-Hcfwew744z4-unsplash.jpg);
+                        clip: border-box;
+                        size: contain
+                        
+                    };
+                }
+            
+                #choix-content2
+                {
+                    background: {
+                        image: url(../images/img/img1.jpg);
+                        size: 100%;
+                        position: 50% 95%;
+                        // clip: border-box;
+                        // size: 300px
+                        
+                    };
+                }
+                
+                #choix-content3
+                {
+                    
+                    background: {
+                        image: url(../images/img/rosebox-BFdSCxmqvYc-unsplash.jpg);
+                        size: 300px 250px 
+
+                        
+                    };
+                }
+
+                .choix-title
+                {
+                    text-align: center;
+                    font-size: 1.1rem;
+                    font-weight: 700;
+                    color:#EA5455  ;
+
+                }
+            }
+        }
+    }
+}
