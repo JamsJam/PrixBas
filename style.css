@@ -1,6 +1,6 @@
 /* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
+	v2.0 | 20110126
+	License: none (public domain)
 */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -18,8 +18,8 @@ time, mark, audio, video {
   margin: 0;
   padding: 0;
   border: 0;
-  font-size: 18px;
-  font-family: "Roboto", sans-serif;
+  font-size: 100%;
+  font-family: inherit;
   vertical-align: baseline;
 }
 
@@ -87,7 +87,6 @@ header {
 }
 .right-align h3 {
   font-weight: 700;
-  font-family: "Montserrat", sans-serif;
 }
 
 .right-align-choix {
@@ -114,6 +113,93 @@ header {
 
 nav {
   background-color: #2d4059;
+}
+
+#cat-section #cat-container {
+  width: 70vw;
+  min-width: 390px;
+  margin: 0 auto;
+}
+#cat-section #cat-container h2 {
+  font-size: 2rem;
+  font-weight: 400;
+  color: #EA5455;
+  margin: 20px 0;
+}
+#cat-section #cat-container a {
+  font-size: 0.9rem;
+  text-decoration: none;
+  color: #000000;
+}
+#cat-section #cat-container #cat-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 150px);
+  grid-template-rows: repeat(2, 160px);
+  gap: 10px;
+  align-items: center;
+  align-content: center;
+  justify-items: center;
+  max-width: 980px;
+  margin: 40px 0;
+}
+#cat-section #cat-container #cat-grid .cat-cell {
+  background-color: #2D4059;
+  border-radius: 25px;
+  height: 140px;
+  width: 140px;
+  color: #E5E5E5;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  transition: all 0.2s;
+}
+#cat-section #cat-container #cat-grid .cat-cell:hover {
+  transform: scale(105%);
+  cursor: pointer;
+}
+#cat-section #cat-container #cat-grid .cat-cell i {
+  font-size: 3.4rem;
+}
+#cat-section #cat-container #cat-grid .cat-cell p {
+  font-size: 1.4rem;
+}
+@media screen and (max-width: 700px) {
+  #cat-section #cat-container {
+    margin: 0 auto;
+  }
+  #cat-section #cat-container #cat-grid {
+    justify-content: center;
+    grid-template-columns: repeat(auto-fill, 140px);
+  }
+  #cat-section #cat-container #cat-grid .cat-cell {
+    width: 130px;
+    height: 130px;
+  }
+  #cat-section #cat-container #cat-grid .cat-cell i {
+    font-size: 3rem;
+  }
+  #cat-section #cat-container #cat-grid .cat-cell p {
+    font-size: 1.2rem;
+  }
+  #cat-section #cat-container #cat-grid #cat-cell1 {
+    display: none;
+  }
+  #cat-section #cat-container #cat-grid #cat-cell3 {
+    display: none;
+  }
+  #cat-section #cat-container #cat-grid #cat-cell6 {
+    display: none;
+  }
+  #cat-section #cat-container #cat-grid #cat-cell7 {
+    display: none;
+  }
+  #cat-section #cat-container #cat-grid #cat-cell5 {
+    display: none;
+  }
+  #cat-section #cat-container #cat-grid #cat-cell4 {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
