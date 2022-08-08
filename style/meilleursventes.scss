@@ -30,9 +30,10 @@
 .infos{
     display: flex;
     justify-content: space-between;
+    p{
+        color: green;
+    }
  }
 
-p{
-    color: green;
- }
+
 
