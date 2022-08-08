@@ -1,6 +1,6 @@
 header {
     height: 105px;
-    border: black 2px solid;
+    // border: black 2px solid;
     background-color: #e5e5e5;
     justify-content: space-between;
     display: flex;
@@ -12,7 +12,7 @@ header {
     align-self: center;
     display: flex;
     align-items: center;
-    border: orange 2px solid;
+    // border: orange 2px solid;
 
     img {
         height: 59px;
@@ -25,8 +25,8 @@ header {
     color: #2d4059;
 }
 .right-align {
-    border: aqua 2px solid;
-    width: 735px;
+    // border: aqua 2px solid;
+    width: 677px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -34,6 +34,7 @@ header {
 
     h3 {
         font-weight: 700;
+        font-family: 'Montserrat', sans-serif;
     }
 
 }
@@ -43,11 +44,11 @@ header {
     
     
     img {
-        height: 24px;
+        height: 20px;
     }
 
     ul {
-        width: 735px;
+        width: 600px;
         display: flex;
         justify-content: space-between;
 
@@ -64,6 +65,101 @@ header {
     }
 }
 
+
+// css Nav //
 nav {
+    // border: rgb(223, 4, 4) 2px solid;
     background-color: #2d4059;
+    height: 102px;
+    display: flex;
+    align-items: center;
+    width: 100vw;
+    
+    a {
+        text-decoration: none;
+        color: white;
+    }
 }
+
+
+#container {
+    width: 100vw;
+}
+
+#menu {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.menu-categories-barre-de-recherche {
+    // border: rgb(14, 223, 14) 2px solid;
+    display: flex;
+}
+
+.menu-categories {
+    background-color: #e5e5e5;
+    color: #2d4059;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    height: 38px;
+    margin-top: 2px;
+    width: 100px;
+    justify-content: center;
+}
+    
+
+// .menu-barre-de-recherche {
+//     // border: rgb(73, 159, 230) 2px solid;
+// }
+
+.menu-catalogue-qf-deconnexion {
+    // border: rgb(211, 25, 180) 2px solid;
+    display: flex;
+    align-items: center;
+    width: 450px;
+    justify-content: space-around;
+}
+
+.menu-connexion {
+    // border: rgb(54, 12, 243) 2px solid;
+    color: #e5e5e5;
+    background-color: #2d4059;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    height: 38px;
+    margin-top: 2px;
+}
+
+// .menu-icones {
+
+//     width: 450px;
+    
+// }
+
+
+.menu-icone {
+    color: white;
+    font-size: 40px; 
+    position: relative;
+}
+
+.menu-icone::after {
+    content: "2";
+    text-align: center;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    color: red;
+    background-color: #e5e5e5;
+    margin-left: 10px;
+    font-size: 15px;
+    display: inline-block;
+    padding-top: 5px;
+}
+
+
+
+
