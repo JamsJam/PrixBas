@@ -1,0 +1,78 @@
+//  CSS footer
+footer {
+    border: rgb(44, 224, 119) 2px solid;
+    background-color: #2d4059;
+    height: 102px;
+    align-items: center;
+    width: 100vw;
+    
+    
+    a {
+    text-decoration: none;
+    }
+
+}
+
+.footer-top {
+    border: solid rebeccapurple 2px;
+    color: #e5e5e5;
+    background-color: #2d4059;
+
+    a {
+        color: #e5e5e5;
+    }
+}
+
+.footer-center {
+    border: solid rgb(32, 97, 61) 2px;
+    background-color: #e5e5e5;
+}
+
+.footer-center-liste {
+    border: solid rgb(4, 13, 20) 2px;
+    
+    display: flex;
+    justify-content: space-between;
+    margin: 0 280px;
+    height: 249px;
+    align-items: center;
+}
+
+.footer-center-liste-un {
+    border: solid rgb(47, 153, 240) 2px;
+    height: 207px;
+}
+
+.footer-center-liste-deux {
+    border: solid rgb(236, 240, 47) 2px;
+    height: 207px;
+}
+
+
+.footer-bottom {
+    border: solid rgb(238, 35, 160) 2px;
+    background-color: #2d4059;
+    
+    li {
+        color: #e5e5e5; 
+    }
+    ul {
+        display: flex;
+        justify-content: center;
+    }
+
+    .footer-bottom-ul {
+
+    }
+
+    .footer-bottom-mentions-légales
+    {
+
+    
+    }
+
+    .footer-bottom-conditions-générales
+    {
+
+    }
+}
