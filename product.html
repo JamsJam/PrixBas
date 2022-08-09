@@ -4,11 +4,131 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    
+
+
+    
+
+    <!-- Intégration Boostrap -->
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
+    
+    
+    <!-- font -->
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;0,700;1,500;1,700&family=Roboto:ital,wght@0,400;0,500;0,700;1,500;1,700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <!-- relier le header.css -->
     <link rel="stylesheet" href="./style.css">
+
+
     <title>Document</title>
 </head>
 <body>
+
+    <!-- Début du header -->
+    <header >
+        <div class="logo">
+            <img src="./images/logo/logo_color.svg" alt="logo">
+            <h1 class="logo-texte">PrixBa</h1>
+        </div>
+        
+        <div class="right-align">
+            <h3>Tous vos besoins à petits prix dans la métropole Lilloise</h3>
+            
+            <div class="right-align-choix">
+                <ul>
+                    <li>
+                        <img src="./images/icone/1.png" alt="icone1">
+                        <p>Choix et commande des articles</p>
+                    </li>
+                    <li>
+                        <img src="./images/icone/2.png" alt="icone2">
+                        <p>Retrait des articles</p>
+                    </li>
+                    <li>
+                        <img src="./images/icone/3.png" alt="icone3">
+                        <p>Paiement des articles</p>
+                    </li>
+                </ul>
+            </div>
+            
+        </div>
+        
+
+    </header>
+    <!-- Fin du header -->
+
+    <!-- Début du main -->
     <main>
+    
+        
+    <!-- Début de la Nav -->
+        <nav>
+            <div id="container">
+                <ul id="menu">
+                    
+                    <li class="menu-categories-barre-de-recherche">
+                        <!-- Catégaories -->
+                        <ul class="menu-categories">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false" style="border-radius: 10px;">Catégories</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#scrollspyHeading3">Third</a></li>
+                                    <li><a class="dropdown-item" href="#scrollspyHeading4">Fourth</a></li>
+                                    <li><hr class="dropdown-divider"></li>
+                                    <li><a class="dropdown-item" href="#scrollspyHeading5">Fifth</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                        <!-- Barre de recherche -->
+                        <ul class="menu-barre-de-recherche">
+                            <div class="container-fluid">
+                                <form class="d-flex" role="search">
+                                    <input class="form-control me-4" type="search" aria-label="Search">
+                                    <button type="button" class="btn btn-danger">Reherche</button>
+                                </form>
+                            </div>
+                            
+                        </ul>
+                    </li>
+                    
+                    <!-- Catalogue, Questions fréquentes et Connexion -->
+                    <ul  class="menu-catalogue-qf-deconnexion">
+                        <li><a href="./product.html" class="catalogue">Catalogue</a></li>
+                        <li><a href="#" class="questions-frequentes">Questions fréquentes</a></li>
+
+                        <!-- Connexion -->
+                        
+                            <li class="menu-connexion nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false" style="border-radius: 10px;">Connexion</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#scrollspyHeading3">Third</a></li>
+                                    <li><a class="dropdown-item" href="#scrollspyHeading4">Fourth</a></li>
+                                    <li><hr class="dropdown-divider"></li>
+                                    <li><a class="dropdown-item" href="#scrollspyHeading5">Fifth</a></li>
+                                </ul>
+                            </li>
+
+                    </ul>
+
+                    <!-- Icones -->
+                    <li>
+                        <i class="bi bi-cart-check"></i>
+                        <i class="menu-icone fa-solid fa-basket-shopping"></i>
+                    </li>
+
+                </ul>
+            </div>
+        </nav>
+        <!-- fin de la Nav -->
 
 
     <!-- Debut de la page  -->
@@ -44,7 +164,8 @@
 
                     <div class="product__produit_option_affichage">
                         <p>Afficher : </p>
-                        <img src="./images/icone/applications.svg" width="20px" alt="">
+                        <img id='affichRow' src="./images/icone/applications.svg" width="20px" alt="">
+                        <img id='affichCol' src="./images/icone/stretch.svg" width="20px" alt="">
                     </div>
 
                     <div class="product__produit_option_tri">
@@ -55,74 +176,150 @@
                     
                 </div>
                 
-                <div class="product__promote">
+                <div class="product__produit-flex-container">
+
+                    <div class="product__promote">
                     
-                    <div class="product__promote_img">
-                        <img src="./images/product/fourniture_ciseaux.png" width="120" alt="">
+                        <div class="product__promote_img">
+                            <img src="./images/product/fourniture_ciseaux.png" width="120" alt="">
+                        </div>
+    
+                        <div class="product__promote_description">
+                            <p>titre</p>
+                            <p>prix</p>
+                            <p class="stock">stock</p>
+                        </div>
                     </div>
 
-                    <div class="product__promote_description">
-                        <p>titre</p>
-                        <p>prix</p>
-                        <p>stock</p>
+                    <div class="product__promote">
+                    
+                        <div class="product__promote_img">
+                            <img src="./images/product/fourniture_ciseaux.png" width="120" alt="">
+                        </div>
+    
+                        <div class="product__promote_description">
+                            <p>titre</p>
+                            <p>prix</p>
+                            <p class="stock">stock</p>
+                        </div>
                     </div>
+
+                    <div class="product__promote">
+                    
+                        <div class="product__promote_img">
+                            <img src="./images/product/fourniture_ciseaux.png" width="120" alt="">
+                        </div>
+    
+                        <div class="product__promote_description">
+                            <p>titre</p>
+                            <p>prix</p>
+                            <p class="stock" >stock</p>
+                        </div>
+                    </div>
+                    
+    
+                    
+                    
+
                 </div>
                 
                 
                 
-                <div class="product__suggestion">
-
-                    <div class="product__suggestion_card">
-                        <img src="./images/product/fourniture_agenda.png" width="120" alt="">
-                        <div>
-
-                            <div>
-                                <p>Titre</p>
-                                <p>en stock</p>
-                            </div>
-                            <div>
-                                
-                                <p>Prix</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="product__suggestion_card">
-                        <img src="./images/product/jeux_voiture.png" width="120" alt="">
-                        <div>
-
-                            <div>
-                                <p>Titre</p>
-                                <p>en stock</p>
-                            </div>
-                            <div>
-                                
-                                <p>Prix</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="product__suggestion_card">
-                        <img src="./images/product/jeux_tracteur_ferme.png" width="120" alt="">
-                        
-                        <div>
-
-                            <div>
-                                <p>Titre</p>
-                                <p>en stock</p>
-                            </div>
-                            <div>
-                                
-                                <p>Prix</p>
-                            </div>
-                        </div>
-                    </div>
-
                 </div>
 
             </div>
 
         </div>
     </main>
+    <script>
+
+
+
+        window.addEventListener("DOMContentLoaded",()=>{
+
+            let container    = document.querySelector(".product__produit-flex-container")
+
+            
+            let produitDiv   = document.querySelectorAll(".product__promote")
+
+
+            let desctiptions = document.querySelectorAll(".product__promote_description")
+            let stocks       = document.querySelectorAll(".stock")
+            let displayId    = 0
+
+            document.querySelector('#affichCol').addEventListener("click", () => {
+                
+                if (displayId !== 0) {
+
+                            // document.querySelector('#affichCol').classList.toggle(affActiv)
+
+                        container.classList.toggle('DisChange1')
+
+
+
+                        for (let i = 0; i < produitDiv.length; i++) {
+
+                            produitDiv[i].classList.toggle('DisChange2')
+
+                        }
+
+                        for (let i = 0; i < desctiptions.length; i++) {
+
+                            desctiptions[i].classList.toggle('DisChange3')
+
+                        }
+
+                        for (let i = 0; i < desctiptions.length; i++) {
+
+                            stocks[i].classList.toggle('DisChange4-p-prix')
+
+                        }
+
+                        displayId = 0
+                }
+        })
+
+
+            document.querySelector('#affichRow').addEventListener("click", ()=>{
+                
+                if (displayId!== 1) {
+
+                    // document.querySelector('#affichCol').classList.toggle(affActiv)
+                    
+                    container.classList.toggle('DisChange1')
+                    
+
+
+                    for (let i = 0; i < produitDiv.length; i++) {
+
+                        produitDiv[i].classList.toggle('DisChange2')
+
+                    }
+
+                    for (let i = 0; i < desctiptions.length; i++) {
+
+                        desctiptions[i].classList.toggle('DisChange3')
+
+                    }
+
+                    for (let i = 0; i < desctiptions.length; i++) {
+
+                        stocks[i].classList.toggle('DisChange4-p-prix')
+
+                    }
+                    
+                    displayId = 1
+
+                    
+                }
+
+
+            })
+    
+
+        })
+
+
+    </script>
 </body>
 </html>
