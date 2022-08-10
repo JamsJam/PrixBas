@@ -9,15 +9,16 @@
 {
     
     width: 80vw;
-    min-width: calc(0.8*580px);
-    margin :  0 auto;
+    max-width: 1180px;
+    min-width: 464px;
+    margin: 0 auto;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     margin-top: 120px;
     
     .product__categorie
     {
-        
+        max-width: 185px;
         width: 20vw;
         min-width: calc(0.2*580px);
         margin: 0 auto;
@@ -104,7 +105,7 @@
                     text-decoration: none;
                     color:white;
                     border-radius : 8px;
-                    height: 20px;
+                    
                     width: 160px;
                     // text-align: center;
                     padding: 5px;
@@ -117,138 +118,73 @@
                         transform: rotate(180deg);
                         font-size: 1.2rem;
                         font-weight:700 ;
-                        right: 15px;
+                        right: 5px;
                     }
                 }
             }
         }
 
-        .product__promote
+        .product__produit-flex-container
         {
-            // 
-            background-color: #fcfcfc;
-            height: 180px;
             display: flex;
-            box-shadow: 1px 1px 6px 5px #00000023;
-            margin: 50px 0;
+            flex-direction: column;
 
-            .product__promote_img
-            {
-                margin: 0 40px;
-                align-self: center;
-            }
 
-            .product__promote_description
-            {
-                height: 180px;
-                margin-left: 30px;
-                
-                
-                    
-
-                p
-                {
-                    margin: 14px 0;
-
-                    &:nth-child(1)
-                    {
-                        font-weight: 700;
-                    }
-                    &:nth-child(2)
-                    {
-                        font-weight: 400;
-                    }
-                    &:nth-child(3)
-                    {
-                        color: green;
-                    
-                }
-
-                }
-            }
-
-        }
-        @media screen and (max-width : 600px )
-        {
             .product__promote
             {
-                margin: 50px auto
-            }
-        }
-
-        .product__suggestion
-        {
-            background-color: #fcfcfc;
-            height: 180px;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            
-            margin: 50px 0;
-
-
-
-            .product__suggestion_card{
-
-                width: 190px;
-                height: 190px;
+                // 
                 background-color: #fcfcfc;
-                box-shadow: 1px 1px 6px 5px #00000023;
-
+                height: 180px;
                 display: flex;
-                flex-direction: column;
-                align-items: center;
-                justify-content: space-around;
-                margin: 10px;
+                box-shadow: 1px 1px 6px 5px #00000023;
+                margin: 50px 0;
 
-                div
+                .product__promote_img
                 {
-                    width: 90%;
-                    align-items: stretch;
+                    margin: 0 40px;
+                    align-self: center;
+                }
+
+                .product__promote_description
+                {
+                    height: 180px;
+                    margin-left: 30px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center
+                }
                     
-                    div
+                    
+                        
+
+                    p
                     {
-                        display: flex;
-                        padding: 0 10px;
-                        
-                        
-                        
-                        &:nth-child(1) 
+                        margin: 14px 0;
+
+                        &:nth-child(1)
                         {
-                            justify-content: space-between;
-                            
-                            p
-                            {
-                                &:last-child {color: green;}
-                            }
+                            font-weight: 700;
                         }
+                        &:nth-child(2)
+                        {
+                            font-weight: 400;
+                        }
+                        &:nth-child(3)
+                        {
+                            color: green;
+                        
+                    }
 
-
-                        &:nth-child(2) {margin: 3px 0}
-                }
-                }
-
-
-                p
-                {
-                    // color: green;
-                    font-size: 1rem;
-                }
+                    }
+                
 
             }
-        }
-        @media screen and (max-width : 600px )
-        {
-
-            .product__suggestion
+            @media screen and (max-width : 600px )
             {
-                flex-direction: column;
-                flex-wrap: nowrap;
-                // justify-content: space-around;
-                margin: 0 auto;
-                align-items: center; 
-                width: fit-content;
-                height: fit-content;
+                .product__promote
+                {
+                    margin: 50px auto
+                }
             }
         }
     }
@@ -262,4 +198,38 @@
                 flex-direction: column;
             }
         }
+// Classes permettant l'evenement u changement de display des articles
 
+.DisChange1
+{
+    flex-direction: row!important;
+    justify-content: space-around!important;
+}
+
+.DisChange2
+{
+    display: flex!important;
+    flex-direction: column!important;
+    align-items: start!important;
+    justify-content: flex-end!important;
+    position: relative;
+    height: auto !important;
+}
+
+.DisChange3
+{
+    padding-left: 14px!important;
+    display: block!important;
+    flex-direction: column!important;
+    justify-content: center!important;
+    height: auto !important ;
+    
+}
+
+.DisChange4-p-prix
+{
+    position: absolute;
+    bottom: 0;
+    right: 30px;;
+    
+}
