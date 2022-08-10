@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* http://meyerweb.com/eric/tools/css/reset/ 
 	v2.0 | 20110126
 	License: none (public domain)
@@ -317,9 +318,7 @@ nav a {
 footer {
   border: rgb(44, 224, 119) 2px solid;
   background-color: #2d4059;
-  height: 102px;
   align-items: center;
-  width: 100vw;
 }
 footer a {
   text-decoration: none;
@@ -329,9 +328,73 @@ footer a {
   border: solid rebeccapurple 2px;
   color: #e5e5e5;
   background-color: #2d4059;
+  display: flex;
+  justify-content: space-evenly;
 }
 .footer-top a {
   color: #e5e5e5;
+}
+
+.footer-content-size {
+  width: 15vw;
+  padding-left: 10px;
+  position: relative;
+}
+.footer-content-size::after {
+  content: "";
+  background-color: #e5e5e5;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  display: block;
+  position: absolute;
+  top: 10px;
+  left: 4px;
+  z-index: 0;
+}
+.footer-content-size a {
+  font-weight: 700;
+}
+
+.footer-top-icon {
+  font-size: 12px;
+  align-self: center;
+  padding-right: 10px;
+  z-index: 1;
+}
+
+.footer-top-articles {
+  border: solid rgb(48, 130, 238) 2px;
+  display: flex;
+}
+.footer-top-articles i {
+  color: red;
+  padding-left: 1px;
+}
+
+.footer-top-achats {
+  border: solid 2px red;
+  display: flex;
+}
+.footer-top-achats i {
+  color: red;
+}
+
+.footer-top-paiement {
+  border: solid rgb(238, 225, 48) 2px;
+  display: flex;
+}
+.footer-top-paiement i {
+  color: red;
+}
+
+.footer-top-livraison {
+  border: solid rgb(48, 238, 111) 2px;
+  display: flex;
+  width: 240px;
+}
+.footer-top-livraison i {
+  color: red;
 }
 
 .footer-center {
@@ -343,32 +406,39 @@ footer a {
   border: solid rgb(4, 13, 20) 2px;
   display: flex;
   justify-content: space-between;
-  margin: 0 280px;
+  margin: 0 300px;
   height: 249px;
   align-items: center;
+  line-height: 50px;
 }
 
 .footer-center-liste-un {
   border: solid rgb(47, 153, 240) 2px;
-  height: 207px;
 }
 
 .footer-center-liste-deux {
   border: solid rgb(236, 240, 47) 2px;
-  height: 207px;
 }
 
 .footer-bottom {
   border: solid rgb(238, 35, 160) 2px;
   background-color: #2d4059;
-}
-.footer-bottom li {
   color: #e5e5e5;
 }
 .footer-bottom ul {
   display: flex;
   justify-content: center;
 }
+.footer-bottom a {
+  color: #e5e5e5;
+}
+
+.footer-bottom-mentions-légales {
+  margin: 0 5px;
+  border-right: solid 3px #e5e5e5;
+  padding-right: 5px;
+}
+
 #choix-section #choix-container {
   width: 70vw;
   min-width: 390px;
